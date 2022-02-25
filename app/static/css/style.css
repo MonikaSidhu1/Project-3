@@ -1,0 +1,207 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image1 {
+    /* The image used */
+    background-image: url("../images/planet-earth.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-image2 {
+    /* The image used */
+    background-image: url("../images/earth.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+.topnav {
+    background-color: rgb(17, 19, 17);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #163da7;
+    color: white;
+  }
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    text-align: center
+  }
+  /* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container-skills {
+  width: 20%; /* Full width */
+  background-color: rgb(82, 72, 72); /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 8px; /* Add top padding */
+  padding-bottom: 8px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 20%; background-color: #04AA6D;} /* Green */
+.css {width: 10%; background-color: #2196F3;} /* Blue */
+.js {width: 35%; background-color: #f44336;} /* Red */
+.python {width: 35%; background-color: #9d4ca0;} /* Dark Grey */
+  
+  
+.top-container {
+  color: white;
+  padding: 30px;
+  text-align: center;
+  background-image: url("../images/earthquake-image-top.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 2000px 170px;
+}
+
+.header {
+  padding: 10px 16px;
+  background: rgba(104, 87, 87, 0.918);
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+  
+ /* remove default margin and padding from body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* set map, body, and html to 100% of the screen size */
+#map,
+body,
+html {
+  height: 100%;
+}
+.map {
+  width:640px;
+  height:480px;
+}
+
+.container-plots {
+  display: flex;
+  align-items: left;
+  justify-content: Left
+}
+.text-plots {
+  font-size: 15px;
+  padding-left: 10px;
+  
+}
+
+.image-plot {
+  flex-basis: 40%
+}
