@@ -15,12 +15,12 @@ def price():
     return render_template("predict.html")
 
 @app.route("/about")
-def price():
-    return render_template("about.html")
+def about():
+     return render_template("about.html")
 
 @app.route("/visualisations")
-def price():
-    return render_template("visualisations.html")
+def visualisations():
+     return render_template("visualisations.html")
 
 
 
