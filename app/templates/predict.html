@@ -9,7 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,7 +27,9 @@
 
     <div class="row" style="padding-top: 50px;">
         <h1>Perth Houseprice</h1>
+
     </div>
+    
 
     <div class="row">
         <div class="col-12">
@@ -35,43 +37,43 @@
 
                 <div class="mb-3">
                     <label class="form-label" for="BEDROOMS">BEDROOMS</label>
-                    <input class="form-control" type="number" name="BEDROOMS id=" BEDROOMS">
+                    <input class="form-control" type="number" name="BEDROOMS" id="BEDROOMS">
 
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label" for="BATHROOMS">BATHROOMS</label>
-                    <input class="form-control" type="number" name="BATHROOMS id=" BATHROOMS">
+                    <input class="form-control" type="number" name="BATHROOMS" id="BATHROOMS">
 
                 </div>
 
 
                 <div class="mb-3">
                     <label class="form-label" for="LAND_AREA">LAND AREA</label>
-                    <input class="form-control" type="number" name="LAND_AREA id=" LAND AREA">
+                    <input class="form-control" type="number" name="LAND_AREA" id="LAND_AREA">
                     <div class="form-text">The Land Area size is in square feet</div>
 
                 </div>
 
 
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label class="form-label" for="Floor_AREA">FLOOR AREA</label>
                     <input class="form-control" type="number" name="FLOOR_AREA id=" FLOOR AREA">
                     <div class="form-text">The Floor Area size is in square feet</div>
 
 
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                     <label class="form-label" for="CBD_DIST">CBD DIST</label>
-                    <input class="form-control" type="number" name="CBD DIST id=" CBD DIST">
+                    <input class="form-control" type="number" name="CBD DIST" id="CBD_DIST">
                     <div class="form-text">The distance from CBD is in meters.</div>
 
 
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="GARAGE">GARAGE</label>
-                    <input class="form-control" type="number" name="GARAGE id=" GARAGE">
+                    <input class="form-control" type="number" name="GARAGE" id="GARAGE">
 
 
 
@@ -79,7 +81,7 @@
 
                 <div class="mb-3">
                     <label class="form-label" for="NEAREST_SCH_RANK">NEAREST SCHOOL RANK</label>
-                    <input class="form-control" type="number" name="NEAREST_SCH_RANK id=" NEAREST SCHOOL RANK">
+                    <input class="form-control" type="number" name="NEAREST_SCH_RANK" id="NEAREST_SCH_RANK">
 
 
 
@@ -88,7 +90,7 @@
 
                 <div class="mb-3">
                     <label class="form-label" for="NEAREST_SCH_DIST">NEAREST SCHOOL DISTANCE</label>
-                    <input class="form-control" type="number" name="NEAREST_SCH_DIST id=" NEAREST SCHOOL DISTANCE">
+                    <input class="form-control" type="number" name="NEAREST_SCH_DIST" id="NEAREST_STN_DIST">
                     <div class="form-text">The distance from School is in meters.</div>
 
 
@@ -98,10 +100,10 @@
 
 
 
-                <button type="button" class="btn btn-dark" id="HOUSE PRICE">Submit</button>
+                <button type="button" class="btn btn-dark" id="price">Submit</button>
         </div>
-
-        <div class="row" style="padding-top: 50px;" id="price">
+        <div class="row"  id="predict"></div>
+        <!-- <div class="row" style="padding-top: 50px;" id="predict"> -->
 
         </div>
     </div>
@@ -109,6 +111,7 @@
 
 
     <script src="../static/js/price.js"></script>
+    
 </body>
 
 </html>

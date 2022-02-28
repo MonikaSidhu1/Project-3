@@ -15,11 +15,18 @@ $("#price").click(() =>{
     console.log(NEAREST_SCH_RANK)
     console.log(NEAREST_STN_DIST)
 
-
-    $.getJSON(`/api/predict/${BEDROOMS}/${BATHROOMS}/${LAND_AREA}/${CBD_DIST}/${GARAGE}/${NEAREST_SCH_RANK}/${NEAREST_STN_DIST}`)(predicted) => { 
-        var price =Math.floor(predicted.prediction)
+    $.getJSON(`/api/predict/${BEDROOMS}/${BATHROOMS}/${LAND_AREA}/${CBD_DIST}/${GARAGE}/${NEAREST_SCH_RANK}/${NEAREST_STN_DIST}`,(predicted) => { 
+         var price =Math.floor(predicted.prediction)
+         console.log(price);
         
-        $("#predict").html
-    
-    }
-})
+         $("#predict").html(`
+         <div class="card-body">
+         <p class="card-text">The price is $${price}</p>
+         </div>
+         `);
+        
+   
+    });
+});
+
+
