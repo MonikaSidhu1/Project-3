@@ -36,6 +36,7 @@ def do_predict(BEDROOMS, BATHROOMS, LAND_AREA,CBD_DIST,GARAGE,NEAREST_SCH_RANK,N
     "NEAREST_STN_DIST": float(NEAREST_STN_DIST)
     }
     prediction = predict(user_input)[0][0].round(2)
+    print(prediction)
 
 
     return {"prediction": prediction}
